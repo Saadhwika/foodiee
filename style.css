@@ -1,0 +1,78 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #fefefe;
+  text-align: center;
+  padding: 50px;
+  transition: background 0.5s ease;
+}
+
+.container {
+  max-width: 700px;
+  margin: auto;
+}
+
+h1 {
+  color: #333;
+  margin-bottom: 20px;
+  font-size: 2.5em;
+}
+
+.mood-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+
+.mood-buttons button {
+  padding: 15px 25px;
+  font-size: 18px;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  background: #4caf50;
+  color: white;
+  transition: transform 0.2s, background 0.3s;
+}
+
+.mood-buttons button:hover {
+  background: #388e3c;
+  transform: scale(1.05);
+}
+
+.result {
+  margin-top: 40px;
+  animation: fadeIn 1s ease forwards;
+}
+
+.hidden {
+  display: none;
+}
+
+.result img {
+  width: 250px;
+  height: auto;
+  border-radius: 12px;
+  margin-top: 10px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.food-name {
+  font-size: 28px;
+  margin-top: 15px;
+  font-weight: bold;
+  color: #333;
+}
+
+.food-description {
+  font-size: 18px;
+  margin-top: 10px;
+  font-style: italic;
+  color: #666;
+  min-height: 40px;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
